@@ -7,6 +7,7 @@ body {
     line-height: 1.6;
     text-decoration-color: white;
     background-color: blue;
+
 }
 
 header {
@@ -40,7 +41,7 @@ nav ul li a {
 section {
     padding: 2rem 0;
     //text-align: center;
-
+    border-radius: unset;
 }
 
 section#about {
@@ -308,7 +309,6 @@ body {
     margin: auto;
     background-color: #051354;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -409,4 +409,25 @@ body {
 .col{
     color: white;
 }
-
+#login{
+    background-color: #6f62c6;
+    border-color: #6f62c6;
+} 
+#login:hover {
+    background-color: #a1c5f8;
+    border-radius: 20%;
+}
+#sign{
+    background-color: #6f62c6;
+    border-color: #6f62c6;
+} 
+#sign:hover {
+    background-color: #a1c5f8;
+    border-radius: 20%;
+}
+.logoimg{
+    height: 150px;
+}
+#element{
+    color: white;
+}

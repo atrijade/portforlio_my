@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="my.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,6 +22,10 @@
             <a href="#projects">My Skills</a>
             <a href="#contact">Contact</a>
         </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" id="login" type="button">LogIn</button>
+            <button class="btn btn-primary" id="sign" type="button">SignIn</button>
+          </div>
     </div>
 
     <section id="about">
@@ -33,8 +38,8 @@
             <div class="other">
 
                 <h1 class="abouti">About Me</h1>
-                <h2 class="abouti">Student at University of Visvesvaraya College of Engineering<br> As B.Tech
-                    Undergraduate in Information Science and Engineering </h2>
+                <h2 class="abouti">Student at University of Visvesvaraya College of Engineering<br> I am a <span class="abouti" id="element"></span> </h2>
+                <!-- <span class="abouti" id="element"></span> -->
             </div>
         </div>
     </section>
@@ -84,16 +89,22 @@
         <h2 class="diff">Projects</h2>
         <div class="pro">
 
-            <div class="project">
-                <h3>Sarvam</h3>
-                <p>Developed during a hackathon</p>
-                <a href="https://github.com/Sarvam-aaaa/Sarvam.git">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Local storage</h3>
-                <p>Recieves data from you and stores it into browser's local storage</p>
-                <a href="https://github.com/atrijade/localstorage_js">View Project</a>
-            </div>
+            <div class="project" class="card" style="width: 18rem;">
+                <img class="logoimg" src="Sarvam-Logo@4x.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sarvam</h5>
+                  <p class="card-text">It was an effort to create a formers community using an user interface</p>
+                  <a href="https://github.com/Sarvam-aaaa/Sarvam" class="btn btn-primary">GitHub Repo</a>
+                </div>
+              </div>
+              <div class="project" class="card" style="width: 18rem;">
+                <img class="logoimg" src="js_logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Local storage</h5>
+                  <p class="card-text">Small project on the local storage using JS local storage of web-browser</p>
+                  <a href="https://github.com/atrijade/localstorage_js" class="btn btn-primary">GitHub Repo</a>
+                </div>
+              </div>
         </div>
 
     </section>
@@ -110,6 +121,15 @@
     <footer>
         <p>&copy; 2024 Atrinandan. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Front-End Web developer', 'Information-Science Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
