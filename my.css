@@ -297,12 +297,7 @@ body {
     width: 80%;
     background-color: #f44336;
 }
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-} */
+
 
 #projects {
     width: 100%;
@@ -431,3 +426,139 @@ body {
 #element{
     color: white;
 }
+/* Base Styles for Navbar */
+/* Base Styles for Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #6f62c6;
+    padding: 10px;
+    position: relative;
+}
+
+.navbar img {
+    height: 90px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #a1c5f8;
+    border-radius: 20%;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar .menu a {
+    flex: 1;
+}
+
+.d-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6f62c6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a, .sidebar button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar button:hover {
+    background-color: #a1c5f8;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Media Query for screen widths below 455px */
+@media (max-width: 455px) {
+    .menu, .d-grid, .si, #sign, #login {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .all{
+        justify-content: center;
+        width: auto;
+        display: block;
+    }
+    .other{
+        padding-left: 0;
+    }
+    .myimag{
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+}
+#logini{
+    background-color: #6f62c6;
+    border-color: #6f62c6;
+} 
+#logini:hover {
+    background-color: #a1c5f8;
+    border-radius: 20%;
+}
+#signi{
+    background-color: #6f62c6;
+    border-color: #6f62c6;
+} 
+#signi:hover {
+    background-color: #a1c5f8;
+    border-radius: 20%;
+}
+
