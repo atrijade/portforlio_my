@@ -404,11 +404,11 @@ body {
 .col{
     color: white;
 }
-#login{
+#logoutButton{
     background-color: #6f62c6;
     border-color: #6f62c6;
 } 
-#login:hover {
+#logoutButton:hover {
     background-color: #a1c5f8;
     border-radius: 20%;
 }
