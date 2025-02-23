@@ -19,7 +19,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Navbar with Sidebar</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="my.css">
     </head>
 
     <body>
@@ -32,11 +32,7 @@
                 <a href="#projects" class="si">My Skills</a>
                 <a href="#contact" class="si">Contact</a>
             </div>
-            <div class="d-grid gap-2 d-md-block">
-                <button class="btn btn-primary" id="logoutButton"  
-                    type="button" class="si">Logout</button>
-                
-            </div>
+            
             <span class="menu-icon" onclick="toggleSidebar()">☰</span>
         </div>
 
@@ -46,11 +42,10 @@
             <a href="#about">About</a>
             <a href="#projects">My Skills</a>
             <a href="#contact">Contact</a>
-            <button class="btn btn-primary" onclick="window.location.href='login.html'" id="logini" type="button">LogIn</button>
-            <button class="btn btn-primary" onclick="window.location.href='login.html'" id="signi" type="button">SignIn</button>
+            
         </div>
 
-        <script src="script.js"></script>
+       
     </body>
 
     </html>
@@ -61,7 +56,7 @@
 
             <div class="/images/myimag">
 
-                <img src="/images/file.png" alt="">
+                <img src="file.png" alt="">
             </div>
             <div class="other">
 
@@ -79,19 +74,19 @@
         <h2 class="diff">MY SKILLS</h2>
         <div class="skills-container">
             <div class="skill-box">
-                <img src="/images/backhtml.png" alt="Skill 1 Image">
+                <img src="backhtml.png" alt="Skill 1 Image">
                 <p>HTML</p>
             </div>
             <div class="skill-box">
-                <img src="/images/css.png" alt="Skill 2 Image">
+                <img src="css.png" alt="Skill 2 Image">
                 <p>CSS</p>
             </div>
             <div class="skill-box">
-                <img src="/images/js_logo.png" alt="Skill 3 Image">
+                <img src="js_logo.png" alt="Skill 3 Image">
                 <p>JavaScript</p>
             </div>
             <div class="skill-box">
-                <img src="/images/gitlogo.png" alt="Skill 3 Image">
+                <img src="gitlogo.png" alt="Skill 3 Image">
                 <p>Git</p>
             </div>
         </div>
@@ -119,7 +114,7 @@
         <div class="pro">
 
             <div class="project" class="card" style="width: 18rem;">
-                <img class="logoimg" src="/images/Sarvam-Logo@4x.png" class="card-img-top" alt="...">
+                <img class="logoimg" src="Sarvam-Logo@4x.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Sarvam</h5>
                     <p class="card-text">It was an effort to create a formers community using an user interface</p>
@@ -127,16 +122,56 @@
                 </div>
             </div>
             <div class="project" class="card" style="width: 18rem;">
-                <img class="logoimg" src="/images/js_logo.png" class="card-img-top" alt="...">
+                <img class="logoimg" src="js_logo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Local storage</h5>
                     <p class="card-text">Small project on the local storage using JS local storage of web-browser</p>
                     <a href="https://github.com/atrijade/localstorage_js" class="btn btn-primary">GitHub Repo</a>
                 </div>
             </div>
+            <div class="project" class="card" style="width: 18rem;">
+                <img class="logoimg" src="dis.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Disastor Management</h5>
+                    <p class="card-text">Small project on the disaster Management which still under development</p>
+                    <a href="https://github.com/atrijade/Disaster-Home" class="btn btn-primary">GitHub Repo</a>
+                </div>
+            </div>
         </div>
 
     </section>
+    <section id="blogs" class="blog-section">
+       
+            <h2 class="section-title">Latest Blogs</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://source.unsplash.com/400x250/?technology,code" alt="Blog 1">
+                    <div class="blog-content">
+                        <h3>Exploring Web Technologies</h3>
+                        <p>Discover the latest trends in web development and how they shape the digital world.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://source.unsplash.com/400x250/?AI,robotics" alt="Blog 2">
+                    <div class="blog-content">
+                        <h3>The Rise of AI</h3>
+                        <p>Understand how artificial intelligence is transforming industries globally.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://source.unsplash.com/400x250/?cybersecurity,data" alt="Blog 3">
+                    <div class="blog-content">
+                        <h3>Cybersecurity in 2025</h3>
+                        <p>Learn about the latest security threats and how to safeguard your data.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="contact">
         <h2 class="col">Contact</h2>
